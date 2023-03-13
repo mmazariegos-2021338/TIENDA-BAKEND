@@ -29,6 +29,8 @@ router.put('/editar/:id', [
     validarJWT
 ]);
 
+//////////////////////////////
+
 router.delete('/eliminar/:id',
     validarJWT
 );
