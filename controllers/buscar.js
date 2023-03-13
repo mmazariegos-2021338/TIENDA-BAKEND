@@ -126,7 +126,7 @@ const buscar = (req = request, res = response) => {
     }
 
 }
-
+ ////Nuevos Metodos de Busqueda 
 
 module.exports = {
     buscar
