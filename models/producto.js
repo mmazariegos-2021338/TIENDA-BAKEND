@@ -13,7 +13,7 @@ const ProductoSchema = Schema({
     categoria: {
       type: Schema.Types.ObjectId,
       ref: 'Categoria',
-      default: '6407aaeca76e4ac982ce8d05'
+      default: '640ba34156b44ff10607353f'
     },
     stock: {
       type: Boolean,

@@ -79,7 +79,7 @@ const deleteUsuario = async (req, res) => {
     }
 
     // Si el usuario que hace la petición es cliente
-    if (req.rol === "CLIENTE_ROL") {
+    if (req.rol === "CLIENTE_ROL") {   //CLIENTE_ROL
       // Solo puede borrar su propio usuario
       if (uid !== id) {
         return res.status(403).json({
@@ -109,8 +109,8 @@ const deleteUsuario = async (req, res) => {
     await Usuario.findByIdAndDelete(id);
 
     res.json({
-      ok: true,
-      msg: "Usuario borrado correctamente",
+      ok: false,
+      msg: "Admin No puede Eliminar a otro admin",
     });
   } catch (error) {
     console.log(error);
@@ -120,6 +120,7 @@ const deleteUsuario = async (req, res) => {
     });
   }
 };
+
 
 
 

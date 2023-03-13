@@ -120,7 +120,7 @@ const buscar = (req = request, res = response) => {
         break;
         default:
             res.status(500).json({
-                msg: 'Ups, se me olviod hacer esta busqueda...'
+                msg: 'Busqueda No realizada'
             });
         break;
     }
