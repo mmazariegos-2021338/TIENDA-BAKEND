@@ -102,10 +102,9 @@ const deleteUsuario = async (req, res) => {
       }
     }
 
-    // Si se llega hasta aquí es porque el usuario que hace la petición
-    // tiene los privilegios necesarios para borrar el usuario que se quiere borrar
+  
 
-    // Borramos el usuario
+    // No podemos Eliminar Usuario Admin 
     await Usuario.findByIdAndDelete(id);
 
     res.json({
