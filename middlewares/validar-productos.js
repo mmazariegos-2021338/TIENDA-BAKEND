@@ -14,7 +14,7 @@ const validarUsuarioProducto = async (req, res, next) => {
     if (usuario && producto) {
       next();
     } else {
-      // Si no se encontraron registros, devolver un error indicando que los campos de usuario y/o producto no existen en la base de datos
+      //Validacion de producente en la base de Datos 
       res.status(404).json({ error: 'El usuario y/o producto no existen en la base de datos' });
     }
   };
